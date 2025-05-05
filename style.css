@@ -1,0 +1,297 @@
+/*gets rid of browser defaults*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*responsive images*/
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  html{
+      font-size: 10px;
+  }
+
+  body {
+    background-color: hsl(-100, -100, 80%);
+  }
+
+  header {
+    z-index: 1;
+    width: 80%;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: .75rem;
+    left: 50%;
+    background: white;
+    text-decoration: none;
+    height: 7.5%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding-top: 2rem;
+  }
+
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  .logo-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .navbar {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-weight: 500;
+    margin-right: 2rem;
+  }
+
+  .navbutton {
+    background: gold;
+    border-radius: 2.5rem;
+    border: none;
+    padding: .5rem;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 1rem;
+  }
+
+  a:visited {
+    color: black;
+  }
+  
+   .banner {
+    max-height: 75rem;
+    width: 100%;
+    object-fit: cover;
+   }
+
+  .icon {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 400;
+  }
+
+  .arrow {
+    color: gold;
+  }
+
+  .bannertxt {
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    line-height: 200%;
+    margin-top: 5rem;
+  }
+
+  .txt1 {
+    font-size: 200%;
+    font-weight: 600;
+  }
+
+  .txt2 {
+    font-size: 125%;
+    margin-bottom: 1rem;
+  }
+
+  .zip {
+    text-align: center;
+    border-radius: 2.5rem;
+    border: none;
+    padding: 1rem .5rem;
+    margin-bottom: 1rem;
+  }
+
+  .button2 {
+    background: gold;
+    border-radius: 2.5rem;
+    border: none;
+    padding: 1rem 2rem;
+  }
+
+  .s2-header {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 200%;
+    font-weight: 600;
+  }
+
+  .box-container {
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .box {
+    text-align: center;
+    background-color: white;
+    border: none;
+    height: 15rem;
+    width: 15rem;
+    margin: 5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #d9d9d9;
+  }
+
+  .middle {
+    text-align: center;
+    background-color: white;
+    border: none;
+    height: 15rem;
+    width: 15rem;
+    margin: 5rem;
+    margin-top: 10rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #d9d9d9;
+  }
+
+  .box-img {
+    height: 5rem;
+    width: 5rem;
+    background-image: url('./ssshape.svg');
+    background-size: 500%;
+    background-position: 52.5% 50%;
+  }
+
+  .s3-header {
+    text-align: center;
+    font-size: 200%;
+  }
+
+  .cmpr-container {
+    margin: 5rem auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .cmpr-details {
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 20%;
+    margin: 5rem;
+  }
+
+  .cmpr-img {
+    margin: auto;
+    height: 5rem;
+    width: 5rem;
+    background-image: url('./blob.svg');
+    background-size: 425%;
+    background-position: 45% 30%;
+  }
+
+  .cmpr-info {
+    max-width: 12.5rem;
+    margin: auto;
+  }
+
+  .mid-banner {
+    max-height: 75rem;
+  }
+
+  .bannertxt2 {
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 137.5%;
+    left: 50%;
+    line-height: 200%;
+    margin-top: 5rem;
+  }
+
+  .text1 {
+    font-size: 200%;
+    font-weight: 500;
+  }
+
+  .text2 {
+    font-size: 125%;
+    margin-bottom: 1rem;
+  }
+
+  .zip2 {
+    text-align: center;
+    border-radius: 2.5rem;
+    border: none;
+    padding: 1rem .5rem;
+  }
+
+  .button3 {
+    background: gold;
+    border-radius: 2.5rem;
+    border: none;
+    padding: 1.5rem 1rem;
+  }
+
+  .intrct {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;;
+    height: 5rem;
+    }
+
+    .faq {
+      font-size: 200%;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    hr {
+      width: 80%;
+      margin: auto;
+      margin-top: 2rem;
+      border: none;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+
+    .faqs {
+      width: 80%;
+      margin: 1rem auto auto 10rem;
+      display: inline-flex;
+      justify-content: left;
+    }
+
+  .arrow-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+    }
+
+    .arrows {
+      border: solid #728FCE;
+      border-width: 0 3px 3px 0;
+      display: inline-flex;
+      flex-direction: row;
+      padding: 3px;
+    }
+
+    .down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
