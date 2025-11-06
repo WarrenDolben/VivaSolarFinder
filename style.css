@@ -19,7 +19,7 @@
   }
 
   body {
-    background-color: hsl(-100, -100, 80%);
+    background-color: hsl(-100, 0%, 100%);
     min-height: 100%;
   }
   /*fixes overflow*/
@@ -61,17 +61,20 @@
   .navbar {
     display: inline-flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    font-weight: 550;
+    justify-content: space-between;
+    width: 90%;
+    font-weight: 500;
+    margin-right: .5rem;
+    margin-left: .5rem;
   }
 
   .navbutton {
     background: gold;
     border-radius: 1.5rem;
-    text-align: start;
-    padding: 1rem .5rem;
+    text-align: center;
+    padding: .5rem .25rem;
     border: none;
+    font-size: 80%;
   }
 
   .navbutton:hover {
@@ -80,8 +83,9 @@
 
   .nav-link {
     text-decoration: none;
-    font-size: 90%;
+    font-size: 80%;
     white-space: nowrap; /*keep text same line*/
+    margin: 1rem;
   }
 
   .nav-link:visited {
@@ -138,21 +142,24 @@
   }
 
   .txt1 {
-    font-size: 200%;
+    font-size: 190%;
     font-weight: 600;
     background: white;
     opacity: .8;
     width: 100%;
     margin: auto;
+    padding: 0 5rem;
+    white-space: nowrap;
   }
 
   .txt2 {
     font-size: 125%;
-    margin-bottom: 1rem;
     background: white;
     opacity: .8;
     width: 100%;
     margin: auto;
+    margin-bottom: 1rem;
+    padding: 0 5rem;
   }
 
   #zip {
@@ -243,8 +250,9 @@
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 20%;
-    margin: 5rem;
+    width: calc(33.33% - 2rem);
+    margin: 1rem;
+    min-width: 200px;
   }
 
   .cmpr-img {
@@ -293,11 +301,11 @@
 
   .text2 {
     font-size: 125%;
-    margin-bottom: 1rem;
     background: white;
     opacity: .8;
     width: 57.5%;
     margin: auto;
+    margin-bottom: 1rem;
   }
 
   #zip2 {
@@ -340,8 +348,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
     }
+
+  .faq-row:hover {
+    background-color: darkgreen;
+  }
 
   .faqs {
     font-size: 150%;
@@ -361,12 +376,22 @@
 
   .arrows {
     border: solid #728FCE;
-    border-width: 0 3px 3px 0;
+    border-width: 0 .3rem .3rem 0;
     display: inline-flex;
     flex-direction: row;
-    padding: 3px;
+    padding: .3rem;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+  }
+
+  .arrows.down {
+    transition: transform 0.3s;
+  }
+  .arrows.down:visited {
+    transform: rotate(180deg); 
+    border-radius: 50%;
+    background-color: gold;
+    padding: 2rem;
   }
 
   .banner-container3 {
@@ -387,23 +412,27 @@
     text-align: center;
     transform: translate(-50%, -50%);
     position: absolute;
-    top: 40%;
-    left: 30%;
+    top: 55%;
+    left: 35%;
     line-height: 200%;
   }
 
   .text3 {
+    margin: auto;
     font-size: 200%;
     font-weight: 500;
     background: white;
     opacity: .8;
+    width: 80%;
   }
 
   .text4 {
     font-size: 125%;
+    margin: auto;
     margin-bottom: 1rem;
     background: white;
     opacity: .8;
+    width: 80%; 
   }
 
     #zip3 {
@@ -423,9 +452,17 @@
     text-align: start;
   }
 
+  .button4:hover {
+    cursor: pointer;
+  }
+
   .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     width: 100%;
+    padding: 2rem;
   }
 
   .logo-footer {
@@ -434,12 +471,13 @@
     display: inline-flex;
     align-items: center;
     margin-left: 2rem;
-    margin-top: 1rem;
-    top: 40%;
+    margin-top: 2rem;
+    top: 20%;
     left: 20%;
   }
 
   .logo-footer-txt {
+    margin-left: 2rem;
     color: white;
     font-size: 150%;
   }
@@ -458,39 +496,256 @@
   }
 
   .footer-info {
-    transform: translate(-50%, -50%);
     position: absolute; 
-    left: 30%;
-    margin-left: 2rem;
-    margin-top: 7rem;
-    margin-right: 2rem;
-    padding: .5rem 2rem 0 .25rem;
+    display: inline-flex;
+    bottom: 0;
+    left: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 30%; 
     text-align: center;
-    width: 80%;
-    background: white;
-    opacity: .8;
+    padding: 1rem;
+    z-index: 2;
+  }
+
+  .footer-links {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    width: 40%; 
+    text-align: right;
+    z-index: 2; 
+    padding: .5rem;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   .footer-link {
     color: white;
     width: 100%;
-    padding: 5rem 5rem 0 5rem;
-  }
-
-  .footer-links {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    text-wrap: nowrap;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    margin-top: 12rem;
-    margin-left: 2rem;
-    width: 20%;
-    text-align: center;
+    padding: 0;
+    margin: .5rem;
+    white-space: nowrap; /*keep text same line*/
   }
 
   .footer-link:visited {
     color: white;
   }
 
+  @media screen and (min-width: 48rem) {
+    .navbutton {
+      padding: .5rem 1rem;
+      font-size: 120%;
+    }
+    .logo-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+    .logo-title {
+      font-size: 150%;
+      margin-left: 1rem;
+    }
+    .nav-link {
+      font-size: 140%;  
+    }
+    .navbutton {
+      font-size: 140%;
+    }
+    .txt1 {
+      font-size: 200%;
+    }
+    .txt2 {
+      font-size: 150%;
+    }
+    #zip {
+      font-size: 150%;
+    }
+    .button2 {
+      font-size: 150%;
+    }
+    .hiw-hdr {
+    font-size: 150%;
+    margin-bottom: 1rem;
+  }
+    .hiw-details {
+      font-size: 120%;
+    }
+    .cmpr-img {
+      height: 7.5rem;
+      width: 7.5rem;
+    }
+    .cmpr-hdr {
+      font-size: 150%;
+      margin-top: 1rem;
+    }
+    .cmpr-info {
+      font-size: 115%;
+      margin-top: 1rem;
+    }
+    .text1 {
+      font-size: 200%;
+    }
+    .text2 {
+      font-size: 150%;
+    }
+    #zip2 {
+      font-size: 150%;
+    }
+    .button3 {
+      font-size: 150%;
+    }
+    .faq {
+      font-size: 225%;
+    }
+    .faqs {
+      font-size: 175%;
+    }
+    .bannertxt3 {
+      top: 55%;
+      left: 25%;
+      width: 40%;
+    }
+    .text3 {
+      font-size: 200%;
+    }
+    .text4 {
+      font-size: 150%;
+    }
+    #zip3 {
+      font-size: 150%;
+    }
+    .button4 {
+      font-size: 150%;
+    }
+    .logo-footer {
+      margin-left: 5rem;
+      margin-top: 2rem;
+    }
+    .logo-footer-txt {
+      margin-left: 1rem;
+    }
+    .footer-info {
+      width: 40%;
+      margin-left: 5rem;
+      margin-right: 5rem;
+      padding: 1rem 2rem;
+      font-size: 150%;
+    }
+    .footer-links {
+      width: 50%;
+      right: 0;
+      padding-bottom: 2rem;
+      font-size: 120%;
+    }
+  }
+  @media screen and (min-width: 77rem) {
+    .logo-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-left: 2rem;
+    }
+    .logo-title {
+      font-size: 200%;
+      margin-left: 1.5rem;
+    }
+    .navbar {
+      width: 80%;
+      margin-left: 20rem;
+      margin-right: 2rem;
+    }
+    .nav-link {
+      font-size: 150%;  
+    }
+    .txt1 {
+      font-size: 250%;
+    }
+    .txt2 {
+      font-size: 175%;
+    }
+    #zip {
+      font-size: 175%;
+    }
+    .button2 {
+      font-size: 195%;
+      padding: 1rem;
+    }
+    .hiw-hdr {
+      font-size: 180%;
+      margin-bottom: 1rem;
+    }
+    .hiw-details {
+      font-size: 130%;
+    }
+    .cmpr-img {
+      height: 10rem;
+      width: 10rem;
+    }
+    .cmpr-hdr {
+      font-size: 200%;
+      margin-top: 1rem;
+    }
+    .cmpr-info {
+      font-size: 130%;
+      margin-top: 1rem;
+    }
+    .text1 {
+      font-size: 250%;
+    }
+    .text2 {
+      font-size: 175%;
+    }
+    #zip2 {
+      font-size: 175%;
+    }
+    .button3 {
+      font-size: 175%;
+    }
+    .faq {
+      font-size: 250%;
+    }
+    .faqs {
+      font-size: 200%;
+    } 
+    .text3 {
+      font-size: 250%;
+    }
+    .text4 {
+      font-size: 175%;
+    }
+    #zip3 {
+      font-size: 175%;
+    } 
+    .button4 {
+      font-size: 175%;
+    }
+    .logo-footer {
+      margin-left: 50rem;
+      margin-top: 3rem;
+      height: 150%;
+      width: 150%;
+    }
+    .logo-footer-txt {
+      font-size: 200%;
+    }
+    .footer-info {
+      width: 40%;
+      margin: 2rem 5rem;
+      padding: 1rem 2rem;
+      font-size: 175%;
+    }
+    .footer-links {
+      width: 40%;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      padding-bottom: 2rem;
+      font-size: 150%;
+    }
+  }
