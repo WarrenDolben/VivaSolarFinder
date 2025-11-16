@@ -10,9 +10,9 @@ function dropDownDetails() {
         appendedDiv = document.createElement('div');
         appendedDiv.innerText = '\rThere are many benefits to using solar energy. You can save money on your electricity bills. You can receive government incentives that help you keep your costs down. You can increase the value of your home. In terms of an environmental impact, switching to solar helps reduce greenhouse gas emissions. Switching to solar also reduces your carbon footprint.';
         appendedDiv.style.width = '80%';
-        appendedDiv.style.margin = '0 15rem';
+        appendedDiv.style.margin = '0 5rem';
         appendedDiv.style.fontWeight = '300';
-        appendedDiv.style.fontSize = '1.5rem';
+        appendedDiv.style.fontSize = '1.25rem';
    
         faqRow.insertAdjacentElement('afterend', appendedDiv);
         
